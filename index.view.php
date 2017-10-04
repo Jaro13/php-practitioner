@@ -157,6 +157,27 @@ echo $tabasoc['imie'];
     <li><strong>Due date: </strong><?= $task['due'];?></li>
     <li><strong>Person responsible: </strong><?= $task['assign_to'];?></li>
     <li><strong>Wykonano: </strong><?= $task['completed']?'Wykonano zadanie':'Nie wykonano';?></li>
+    <li><strong>Wykonano sprawdzenie przy instukcji if: </strong><?php
+        
+        if ($task['completed']) {
+            echo '<span class="icon">&#9989</span>';
+        } else {
+            echo 'not completed';
+        }
+        ?>
+    </li>
+    <li><strong>Wykonano alternatywna skladnia: </strong>
+        <?php if ($task['completed']):?>
+        <span class="icon" style="size: 40px;">&#9989;</span>
+        
+        <?php else :?>
+        
+        <span class="icon">&#9995</span>    
+        
+        <?php endif;?>
+    </li>
+    
+    
     
 </ul>
 
