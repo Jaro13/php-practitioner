@@ -181,3 +181,15 @@ echo $tabasoc['imie'];
     
 </ul>
 
+
+
+<?php 
+
+$mytab=[
+   1,2,3,10,1234123,
+];
+
+dd($mytab);
+
+
+?>

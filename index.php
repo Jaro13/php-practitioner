@@ -39,7 +39,9 @@ unset($tabasoc['costam']);
 
 require 'errors.php';
 require 'task.php';
+require 'dd.php';
 require 'index.view.php';
+
 
 
 
