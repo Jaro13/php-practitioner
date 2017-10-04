@@ -125,7 +125,7 @@ echo $tabasoc['imie'];
 
 <br>
 
-<?php die(var_dump($tabasoc));?>
+<?php //die(var_dump($tabasoc));?>
 
 
 <h3>po funkcji die() to sie juz nie wyswietli</h3>
@@ -134,5 +134,29 @@ echo $tabasoc['imie'];
 </html>
 
 
+<h1>rozdział 8</h1>
 
+
+<ul>
+    
+    <?php foreach ($task as $heading => $value):?>
+    
+    <li>
+        <strong><?= ucwords ($heading) ;?></strong> <?= $value;?>
+    </li>
+    
+    <?php endforeach;?>
+    
+</ul>
+
+<hr>
+<h2>2 metoda</h2>
+
+<ul>
+    <li><strong>Name: </strong><?= $task['title'];?></li>
+    <li><strong>Due date: </strong><?= $task['due'];?></li>
+    <li><strong>Person responsible: </strong><?= $task['assign_to'];?></li>
+    <li><strong>Wykonano: </strong><?= $task['completed']?'Wykonano zadanie':'Nie wykonano';?></li>
+    
+</ul>
 
