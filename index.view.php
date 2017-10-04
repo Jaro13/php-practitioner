@@ -80,8 +80,55 @@
 </ul>
 
 
+    
+<h3>tablice asocjacyjne</h3>
 
 
+
+<hr>
+
+
+
+<ul>
+<?php foreach ($tabasoc as $key => $value):?>
+
+<li><?= 'klucz tablicy to:' ,$key, ' wartosc tablicy to: '.$value;?></li>
+
+
+<?php endforeach;?>
+
+</ul>
+
+<ul>
+    <?php foreach ($tabasoc as $key => $value):?> 
+    
+    <li><strong><?= $key;?></strong> <?=$value;?></li>
+    
+    <?php endforeach;?>
+</ul>
+
+<?php 
+
+echo $tabasoc['imie'];
+
+
+
+?>
+
+<br>
+
+<pre>
+
+<?php var_dump($tabasoc);?>
+
+</pre>
+
+<br>
+
+<?php die(var_dump($tabasoc));?>
+
+
+<h3>po funkcji die() to sie juz nie wyswietli</h3>
 
 </body>
 </html>
