@@ -50,6 +50,5 @@ $tasks = [
 ];
 
 
-$tasks[0]->complete();
 
-echo $tasks[0]->completed;
+
