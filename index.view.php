@@ -193,3 +193,115 @@ dd($mytab);
 
 
 ?>
+
+
+<hr>
+
+<h2>class</h2>
+
+
+<?php
+
+//var_dump($mytask);
+
+echo "<br>";
+
+//echo $mytask->description;
+
+echo "<br>";
+
+//var_dump($mytask->isComplete());
+
+
+//tablica obiektow klasy Task2
+
+//mamy tablice obiektow
+dd($tasks);
+
+
+?>
+
+<h3>lista tasks</h3>
+
+<?php 
+
+//sprawdzenie czy zwroci prawde
+echo $tasks[0]->completed;
+
+
+?>
+
+
+<ul>
+
+
+    <?php    foreach ($tasks as $task):?>
+    
+    <li>
+    
+        <?php if ($task->completed):?>
+        
+        <strong>
+        
+        <?php endif;?>
+        
+            <?= $task->description;?>
+        
+        
+        <?php if($task->completed):?>
+        </strong>   
+       
+        <?php endif;?>
+
+
+
+    </li>  
+            
+    <?php    endforeach;?>
+    
+    
+
+    
+</ul>  
+
+
+<hr>
+
+
+<h2>inna metoda - powyzsza nie dziala</h2>
+
+
+
+<ul>
+
+
+    <?php    foreach ($tasks as $task):?>
+    
+    <li>
+    
+        <?php if ($task->completed):?>
+        
+        <strong><?= $task->description;?></strong>
+        
+        
+        
+        <?php else :?>
+        
+        <?= $task->description;?>
+        
+        <?php endif;?>
+
+
+    </li>  
+            
+    <?php    endforeach;?>
+    
+    
+
+    
+</ul>  
+
+
+
+
+

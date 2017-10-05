@@ -1,3 +1,42 @@
 10.
 funkcja dd
+11.
+sql-todos - tabela oraz insert
+
+
+
+php tabliczka gajda
+
+php tabliczka powells
+
+php oop derek
+
+php csv import sulnski
+
+php tutsplus ten kurs
+
+php quicksort
+
+php slowanie - polskie wyjasnienie potem impelementacja
+
+mysqltutorial - sam sql
+
+php mysqltutorial
+
+php postgresql qltutorial
+
+php sqlite qltutorial
+
+php faker 
+
+php lorem pixel
+
+conct form recaptacha
+
+sweetalert
+
+parsley
+
+laravel podstawy
+
 

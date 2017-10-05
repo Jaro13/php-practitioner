@@ -37,9 +37,12 @@ $tabasoc['costam']='bzdura';
 unset($tabasoc['costam']); 
 
 
+
+
 require 'errors.php';
 require 'task.php';
 require 'dd.php';
+require 'class.php';
 require 'index.view.php';
 
 
