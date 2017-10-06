@@ -43,6 +43,8 @@ require 'errors.php';
 require 'task.php';
 require 'dd.php';
 require 'class.php';
+require 'taskmysql.php';
+require 'pdo.php';
 require 'index.view.php';
 
 

@@ -304,4 +304,130 @@ echo $tasks[0]->completed;
 
 
 
+<hr>
+
+<h2>pdo</h2>
+
+
+<?php
+
+
+
+//wynik jako tablica
+var_dump($resultsTab);//zastosować takz funkcję dd
+
+echo '<br>';
+
+
+dd($resultsTab);
+
+
+echo "<hr>";
+
+echo '<br>';
+
+//nasza funkcja - tablica obiktów
+dd($resultsObj);
+
+
+
+echo '<br>';
+
+echo '<hr>';
+
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+
+
+
+echo 'to jest property z obiektu z bazy - kolumna description<br>';
+//jak pobac 1 elemet tablicy
+var_dump($resultsObj[0]->description);//property decription
+
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+
+//tutaj powonno byc strong bo jest przekreslone
+
+echo 'to jest property z obiektu z bazy - kolumna completed<br>';
+
+var_dump($resultsObj[1]->completed);
+
+?>
+
+
+<h2>pobieranie obiektów z bazy</h2>
+
+
+<ul>
+    
+    <?php    foreach ($resultsObj as $task):?>
+    
+    <li>
+        <?php if ($task->completed):?>
+        <strong><?= $task->description;?></strong>
+        <?php  else:?>
+            <?= $task->description;?>
+        <?php endif;?>
+        
+        
+    </li>
+    
+    
+    <?php    endforeach;?>
+</ul>
+
+
+
+
+<h2>pobieranie obiektów z bazy- PO STWRORZENIU NOWEGO OBIEKTU</h2>
+
+
+
+    
+    
+    <h4>test obiektu</h4>
+    <?php //var_dump($tasksMysql);?>
+    
+    
+    
+    <h4>test metody z obiektu - czyli obiekt czesciowo pobieraz dane
+    z bazy czyli wlasciowsci oraz korzysta z metod danych dodatkowo w klasie
+    
+    </h4>
+
+    
+    <?php var_dump($tasksMysql[0]->foobar());?>
+    
+
+
+<ul>
+    
+    <?php    foreach ($tasksMysql as $task):?>
+    
+    <li>
+        <?php if ($task->completed):?>
+        <strong><?= $task->description;?></strong>
+        <?php  else:?>
+            <?= $task->description;?>
+        <?php endif;?>
+        
+        
+    </li>
+    
+    
+    <?php    endforeach;?>
+</ul>
+
+
+
+
+
+
+
+
 
