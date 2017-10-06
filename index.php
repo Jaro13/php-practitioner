@@ -37,14 +37,18 @@ $tabasoc['costam']='bzdura';
 unset($tabasoc['costam']); 
 
 
-
+//uwaga trzeba zmieniac kolejnośc tych plików - w miarę wykonywanych
+//cwiczen
 
 require 'errors.php';
 require 'task.php';
-require 'dd.php';
+
 require 'class.php';
 require 'taskmysql.php';
+
+require 'functions.php';
 require 'pdo.php';
+
 require 'index.view.php';
 
 
