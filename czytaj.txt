@@ -37,6 +37,13 @@ sweetalert
 
 parsley
 
+composer autoload
+
+mailgun
+
+recaptach wszyskto przez komposer
+
+
 laravel podstawy
 
 
