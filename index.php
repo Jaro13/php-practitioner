@@ -1,60 +1,25 @@
 <?php
 
-
-$greeting = "hello world";
-
-
-$names=[
-    'john',
-    'peter',
-    'mary',
-];
+require 'database/Connection.php';
 
 
-$animals =[
-    'kot',
-    'pies',
-    'koza',
-    'byk',
-];
-
-$tabasoc =[
-    'imie'=>'michu',
-    'age'=>'16',
-    'home animal'=>'cat',
-];
-
-//dodawanie danych do tablicy
-//dadalem do tablcy wartosc bzdura o indeksie costam
+require 'database/QueryBuilder.php';
 
 
-$tabasoc['costam']='bzdura';
+$pdo= Connection::make();//uzycie metody statycznej z klasy Connection
 
-//jak dodac do tej samej tablicy wartosci losowe liczbowe losowane przez rand?
+//powolujemy do zycia obiekt clasy Querybuilder
+//new QueryBuilder($pdo);
 
+$query = new QueryBuilder($pdo);
 
-//jak usunac z tablicy dane 
-unset($tabasoc['costam']); 
+//odpalamy metode selectAll z obiekty $query z klasy QueryBuilder
+//$query->selectAll('todos');
 
+//zapisujemy w zmiennje tasks - to jest tablica
+$tasks=$query->selectAll('todos');
 
-//uwaga trzeba zmieniac kolejnośc tych plików - w miarę wykonywanych
-//cwiczen
-
-require 'errors.php';
-require 'task.php';
-
-require 'class.php';
-require 'taskmysql.php';
-
-require 'functions.php';
-require 'pdo.php';
+var_dump($tasks);
 
 require 'index.view.php';
-
-
-
-
-?>
-
-
 

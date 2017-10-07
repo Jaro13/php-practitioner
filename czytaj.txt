@@ -47,3 +47,6 @@ recaptach wszyskto przez komposer
 laravel podstawy
 
 
+formatowanie kodu netbeand
+
+ctrl-alt-f  
