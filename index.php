@@ -18,17 +18,20 @@ require 'Task.php';
 //mozna takze wykonac zapytani ora wybrac obiekt
 $tasks=$query->selectAll('todos','Task');//wynik to objekty klasy Task - jest dołączona przez require
 
-
+//sprawdzic o co tutaj chodz
+/*
 $tasks= array_map(function($task){
     
 return foo;
 }
         , $tasks);
 
+*/
 
+//die(var_dump($tasks)); //to informuje co jest zwracane - obiekt czy task object
 
-die(var_dump($tasks)); //to informuje co jest zwracane - obiekt czy task object
-
+//mamy takze dostęp do tablicy config
+//var_dump($config);
 
 require 'index.view.php';
 
