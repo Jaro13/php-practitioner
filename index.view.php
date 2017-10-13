@@ -33,3 +33,35 @@
 
 
 <hr>
+
+
+<h3>to jest o wiele jaśniejszy sposób if-else-endif</h3>
+
+<ul>
+
+
+    <?php    foreach ($tasks as $task):?>
+    
+    <li>
+    
+        <?php if ($task->completed):?>
+        
+        <strong><?= $task->description;?></strong>
+        
+        
+        
+        <?php else :?>
+        
+        <?= $task->description;?>
+        
+        <?php endif;?>
+
+
+    </li>  
+            
+    <?php    endforeach;?>
+    
+    
+
+    
+</ul>  

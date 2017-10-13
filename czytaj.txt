@@ -46,6 +46,12 @@ recaptach wszyskto przez komposer
 
 laravel podstawy
 
+laravel crm odpalic
+
+laravel invoice ninja
+
+laravel zarządzanie projektami
+
 
 formatowanie kodu netbeand
 
