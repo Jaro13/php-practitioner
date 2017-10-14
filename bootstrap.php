@@ -22,7 +22,7 @@ return new QueryBuilder(
         Connection::make($config['database'])
         );
 
-
+//co jest w var_dump($config['database'])
 
 
 ?>

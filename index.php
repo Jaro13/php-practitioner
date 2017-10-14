@@ -33,6 +33,26 @@ return foo;
 //mamy takze dostęp do tablicy config
 //var_dump($config);
 
+//tablica asocjacyja o indeksie database
+echo "<pre>";
+var_dump($config['database']);
+echo "</pre>";
+
+echo "<br>";
+
+echo "<pre>";
+var_dump($config);
+echo "</pre>";
+
+echo "<br>";
+
+echo "<pre>";
+var_dump($config['database']['options']);//dlaczego tutaj nie zwraca bledow
+echo "</pre>";
+
+
+
+
 require 'index.view.php';
 
 //dlaczego nie działa powtorzyc to!!! od 15 minuty takze inne
