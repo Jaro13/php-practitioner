@@ -3,11 +3,14 @@
 
 $config = require 'config.php';
 
+//to jest w lekcji 16
+require 'core/Router.php';
 
-require 'database/Connection.php';
+
+require 'core/database/Connection.php';
 
 
-require 'database/QueryBuilder.php';
+require 'core/database/QueryBuilder.php';
 
 
 
@@ -22,7 +25,8 @@ return new QueryBuilder(
         Connection::make($config['database'])
         );
 
-//co jest w var_dump($config['database'])
+//co jest w 
+//var_dump($config['database'])
 
 
 ?>

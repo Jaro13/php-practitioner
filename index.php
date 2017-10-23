@@ -1,58 +1,42 @@
 <?php
 
-//to jest pierwszy krok
-//require 'bootstrap.php';
-
-//po zmiana w bootstrap.php
-$query = require 'bootstrap.php';//to jest nowy Querybuilder object?
-
-require 'Task.php';
 
 
-//odpalamy metode selectAll z obiekty $query z klasy QueryBuilder
-//$query->selectAll('todos');
+//$query = require 'core/bootstrap.php';
 
-//zapisujemy w zmiennje tasks - to jest tablica
-//$tasks=$query->selectAll('todos');
-
-//mozna takze wykonac zapytani ora wybrac obiekt
-$tasks=$query->selectAll('todos','Task');//wynik to objekty klasy Task - jest dołączona przez require
-
-//sprawdzic o co tutaj chodz
-/*
-$tasks= array_map(function($task){
-    
-return foo;
-}
-        , $tasks);
-
-*/
-
-//die(var_dump($tasks)); //to informuje co jest zwracane - obiekt czy task object
-
-//mamy takze dostęp do tablicy config
-//var_dump($config);
-
-//tablica asocjacyja o indeksie database
-echo "<pre>";
-var_dump($config['database']);
-echo "</pre>";
-
-echo "<br>";
-
-echo "<pre>";
-var_dump($config);
-echo "</pre>";
-
-echo "<br>";
-
-echo "<pre>";
-var_dump($config['database']['options']);//dlaczego tutaj nie zwraca bledow
-echo "</pre>";
+$database= require 'core/bootstrap.php';
 
 
+$router = new Router;
 
 
-require 'index.view.php';
+require 'routes.php';
 
-//dlaczego nie działa powtorzyc to!!! od 15 minuty takze inne
+//zienna globalna serwer
+//var_dump($_SERVER);
+
+
+//tylko 1 elemnt tej tablicy czyli i ideksie REQUEST_URI
+//var_dump($_SERVER['REQUEST_URI']);
+
+
+$uri = trim($_SERVER['REQUEST_URI'],'/');  
+
+//dlaczego nie generuje sie uri
+//tutaj widać ze działą funkcja trim - działe tylko na indeksie!!!
+//var_dump($uri);
+
+
+//o co tutaj chodzi?
+//require $router->direct($uri);   
+
+//var_dump($uri);
+
+//to ponizsze działa 
+//require $router->direct('about/culture');   
+//koniec 13,38
+ 
+
+//gdzie jest ta proba routingu - pliki partials - to co nie dziala?
+require $router->direct($uri);   
+
