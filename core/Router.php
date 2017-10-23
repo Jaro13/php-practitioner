@@ -5,6 +5,21 @@ class Router {
     
     
     protected $routes=[];
+    
+    
+    public static function load($file){//to jest statyczna funkcja
+        
+        $router= new static;//nie wiem jak to działa
+        
+        require $file;
+        
+        return $router;
+        
+        
+    }
+
+    
+
 
 
     public function define($routes){
