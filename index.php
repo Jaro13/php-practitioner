@@ -1,6 +1,7 @@
 <?php
 
-
+//uwaga to włączenie bledów powoduje ze pojawia się exeption - 404
+require 'errors.php';
 
 //$query = require 'core/bootstrap.php';
 

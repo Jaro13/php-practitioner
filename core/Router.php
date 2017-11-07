@@ -11,9 +11,13 @@ class Router {
         
         $router= new static;//nie wiem jak to działa
         
+        //czy moze byc cos takiego
+        //$router= new self;
+        
         require $file;
         
         return $router;
+        
         
         
     }
@@ -38,8 +42,8 @@ class Router {
         return $this->routes[$uri];
         
         }
-        
+        //dlaczego nie działą exceptions? - jesli nie ma routes ?
         throw new Exception('No routes defined for this URI');
-    
+        //throw new Exception('No route defined for this URI.');
     }
 }

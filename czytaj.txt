@@ -2,6 +2,26 @@
 funkcja dd
 11.
 sql-todos - tabela oraz insert
+15.
+dlaczeto nie pobiera danych z tabeli?
+16.
+dlaczego nie działa Exception - przy 404 strona nie istenije?
+htaccess - czy wymaga hosta osobnego? - nie działą na php built in server?
+
+jak wygenerować duzo ilosc rekordów - na osobnym route?
+cos jak about lub contact- pdo dużo danych
+
+takze mysql tutorial - wpisywanie danych oraz wyswietlenia danych
+
+faker
+
+lorem pixel
+
+paginacja
+
+
+
+
 
 
 

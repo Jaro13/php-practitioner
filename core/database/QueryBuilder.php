@@ -15,7 +15,7 @@ class QueryBuilder{
 
     
 
-    public function selectAll($table, $intoClass){
+    public function selectAll($table){
         
         //teraz pdo to property tej klasy czyli this
         //$statement = $pdo->prepare('SELECT * FROM todos');
@@ -27,7 +27,7 @@ class QueryBuilder{
         //return $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
         
         //lub wrzucic do zmiennej
-        return $statement->fetchAll(PDO::FETCH_CLASS, $intoClass);
+        return $statement->fetchAll(PDO::FETCH_CLASS);
         
     }
     

@@ -7,7 +7,7 @@ $app=[];
 $app['config']= require 'config.php';
 
 
-$config = require 'config.php';
+//$config = require 'config.php';
 
 //to jest w lekcji 16
 require 'core/Router.php';
