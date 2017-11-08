@@ -19,7 +19,15 @@ lorem pixel
 
 paginacja
 
+17.
+views-partials
+najpierw - wszystko recznie 1 commit
 
+
+
+potem bootstrap na samym koncu
+
+takze starter2016, logow, favicon, strona w bootstrap example, kilka podstwor, robots itd
 
 
 
