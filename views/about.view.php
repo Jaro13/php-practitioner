@@ -1,7 +1,8 @@
 
 
-view about
+<?php require ('partials/head.php'); ?>
 
+view about
 
 <?php
 
@@ -12,6 +13,14 @@ echo $name;
 //die(var_dump($app));
 
 ?>
+
+
+
+
+
+
+<?php require ('partials/footer.php'); ?>
+
 
 
 

@@ -30,6 +30,57 @@ potem bootstrap na samym koncu
 takze starter2016, logow, favicon, strona w bootstrap example, kilka podstwor, robots itd
 
 
+vendor wszystkie biblioteki takze
+package.json takze 
+
+htaccess podstawowy
+
+htaccess rozbudowan
+
+semantic html
+
+404
+
+503
+
+html walidodor - w3 - sprawdzenie poprawności
+
+images gulp compresja
+
+img, alt
+
+filmy video jako osadzic takze
+
+.env - jak zaimplemantowac
+
+google site ver
+
+google analytcs
+
+robots.txt - inne
+
+
+
+sitemapa jak
+
+
+
+
+modern businesss
+
+mailgun ten bez laravela
+
+
+
+spinx search 
+
+typeahead
+
+
+lorem pixel
+
+paginacja
+
 
 
 
